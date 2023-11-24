@@ -5,10 +5,19 @@
     justify-content: space-between;
     padding: rem(29) rem(20);
     align-items: center;
+    @include mq(md) {
+        flex-direction: column;
+    }
 }
 
 .header__logo img {
     max-width: rem(263);
+}
+
+.header__text {
+    @include mq(md) {
+        margin-top: rem(20);
+    }
 }
 
 .header__text-open {
@@ -18,10 +27,14 @@
 .header__text-tel {
     display: flex;
     justify-content: end;
+    align-items: center;
     margin-top: rem(7);
+    @include mq(md) {
+        justify-content: center;
+    }
 }
 
-.header__text-tel .icon {
+.header__text-tel img {
     width: rem(25);
     height: rem(25);
 }
