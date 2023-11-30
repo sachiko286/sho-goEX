@@ -1,0 +1,146 @@
+@use "global" as *;
+
+
+.info-inner {
+    display: flex;
+    margin-top: rem(196);
+    @include mq(md) {
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: rem(100);
+    }
+}
+
+.info-content {
+    max-width: rem(533);
+    width: 100%;
+    margin-left: rem(34);
+    @include mq(md) {
+        margin:  0 auto;
+        width: auto;
+
+    }
+}
+
+.info-header__logo {
+    @include mq(md) {
+    text-align: center;
+    }
+}
+
+.info-header__logo a img  {
+    display: inline-block;
+}
+
+.info__address {
+    display: flex;
+    margin-top: rem(52);
+    @include mq(md) {
+        justify-content: center;
+    }
+}
+
+.info__tel {
+    justify-content: left;
+    margin-top: rem(25);
+}
+
+.info__map { 
+    @include mq(md) {
+        margin-top: rem(20);
+        text-align: center;
+    }  
+
+}
+
+.info__map iframe {
+    max-width: rem(600);
+    aspect-ratio: 600 / 450;
+    height: auto;
+    @include mq(md) {
+        width: 100%;
+    }  
+}
+
+
+.info__open {
+    margin-top: rem(28);
+    border-top: 2px solid #E7E7E7;
+    border-bottom: 2px solid #E7E7E7;
+    padding: rem(22) 0;
+    @include mq(md) {
+    }  
+}
+
+.info-open-time {
+    margin-left: rem(28);
+    border-left: 2px solid #E7E7E7;
+        @include mq(xl) {
+            margin-left: rem(20);
+    }
+}
+
+.info__open-content  {
+    display: flex;
+    @include mq(md) {
+    }
+}
+
+.info__open-hour {
+    display: flex;
+    @include mq(sm) {
+        flex-direction: column;
+    }
+}
+
+.info__open-am {
+    margin-left: rem(23);
+
+}
+
+.info__open-pm {
+    margin-left: rem(17);
+    @include mq(sm) {
+        margin-left: rem(23);
+    }
+}
+.info__open-line {
+    display: flex;
+    margin-left: rem(28);
+    @include mq(xl) {
+        margin-left: rem(20);
+}
+
+}
+
+.info__close {
+    display: flex;
+    margin-top: rem(40);
+    @include mq(md) {
+    }
+}
+
+.info__close-line {
+    margin-left: rem(44);
+    border-left: 2px solid #E7E7E7;
+    @include mq(xl) {
+        margin-left: rem(36);
+}
+
+
+}
+
+.info__close-day {
+    margin-left: rem(28);
+    @include mq(xl) {
+        margin-left: rem(20);
+}
+
+
+
+}
+
+.info__open-line:not(:first-child) {
+    margin-top: rem(13);
+}
+

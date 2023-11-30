@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.footer-copy-wright {
+    text-align: right;
+    font-size: rem(11);
+    margin-top: rem(8);
+    margin-bottom: rem(139);
+    @include mq(md) {
+        margin-bottom: rem(60);
+
+        
+    }
+}

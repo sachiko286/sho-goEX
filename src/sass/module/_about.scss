@@ -16,6 +16,11 @@
     }
 }
     
+.about__image {
+    @include mq(md){
+        margin-top: rem(30);
+    }
+}
 
 .about__image img {
     max-width: rem(690);
@@ -32,6 +37,9 @@
     @include mq(xl) {
         padding-left: 0;
         padding-right: 0;  
+    }
+    @include mq(sm) {
+        text-align: start;
     }
 }
 
@@ -55,4 +63,7 @@
     color: #444;
     font-size: rem(16);
     line-height: 2.4;
+    @include mq(sm) {
+        line-height: 2;
+    }
 }

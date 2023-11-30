@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.work {
+    background-color: #F5FCF8;
+    margin-top: rem(82);
+    padding-bottom: rem(82);
+}
+
+.work__inner {
+    padding-top: rem(78);
+}
+
+.work__header {
+    text-align: center;
+}
+
+
+.work__subtitle {
+    margin-top: rem(70);
+}
+
+.work__items {
+    margin-top: rem(34);
+    display: flex;
+    gap: rem(20);
+    @include mq(md){
+        flex-direction: column;
+        align-items: center;
+    }
+}
