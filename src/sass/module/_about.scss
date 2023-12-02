@@ -2,6 +2,7 @@
 
 .about__inner {
     margin-top: rem(162);
+    display: block;
     @include mq(md) {
         margin-top: rem(80);
     }
@@ -58,12 +59,5 @@
     margin-top: rem(32);
 }
 
-.about__textarea-text {
-    margin-top: rem(37);
-    color: #444;
-    font-size: rem(16);
-    line-height: 2.4;
-    @include mq(sm) {
-        line-height: 2;
-    }
-}
+
+
